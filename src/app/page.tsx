@@ -1,5 +1,8 @@
 import Image from "next/image";
-import test2 from "../assets/file.svg"
+import fileSVG from "../assets/file.svg"
+import windowSVG from "../assets/window.svg"
+import vercelSVG from "../assets/vercel.svg"
+import globeSVG from "../assets/globe.svg"
 
 export default function Home() {
   return (
@@ -7,7 +10,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src={test2}
+          src={fileSVG}
           alt="Next.js logo"
           width={180}
           height={38}
@@ -35,7 +38,7 @@ export default function Home() {
           >
             <Image
               className="dark:invert"
-              src="/vercel.svg"
+              src={vercelSVG}
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -61,7 +64,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src={test2}
+            src={fileSVG}
             alt="File icon"
             width={16}
             height={16}
@@ -76,7 +79,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/window.svg"
+            src={windowSVG}
             alt="Window icon"
             width={16}
             height={16}
@@ -91,7 +94,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/globe.svg"
+            src={globeSVG}
             alt="Globe icon"
             width={16}
             height={16}
