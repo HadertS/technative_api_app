@@ -1,15 +1,11 @@
-interface post {
-  id: number;
-  title: string;
-}
 
 export default async function Page() {
-  const data = await fetch("https://api.vercel.app/blog");
-  const posts = await data.json();
+  const data = await fetch("https://api.apis.guru/v2/providers.json");
+  const providers = await data.json();
   return (
     <ul>
-      {posts.map((post:post) => (
-        <li key={post.id}>{post.title}</li>
+      {providers.data.map((provider:string) => (
+        <ul key={provider}>{provider}</ul>
       ))}
     </ul>
   );
