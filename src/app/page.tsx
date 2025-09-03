@@ -1,4 +1,5 @@
 import Image from "next/image";
+import test2 from "../assets/file.svg"
 
 export default function Home() {
   return (
@@ -6,7 +7,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="src/app/img/file.svg"
+          src={test2}
           alt="Next.js logo"
           width={180}
           height={38}
@@ -60,7 +61,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/file.svg"
+            src={test2}
             alt="File icon"
             width={16}
             height={16}
